@@ -5,7 +5,6 @@ import { WhyChooseUs } from "./home/WhyChooseUs";
 import { RentalOffers } from "./home/RentalOffers";
 import { NextAdventure } from "./home/NextAdventure";
 
-
 export default function Home() {
   return (
     <div className="pt-20 -mt-20">
