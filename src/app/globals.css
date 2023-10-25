@@ -7,5 +7,12 @@
 }
 
 html {
-  @apply scroll-smooth text-base;
+  @apply scroll-smooth font-sans font-normal text-base text-default-900;
+}
+
+@media screen and (max-height: 890px) {
+  .hero-section {
+    min-height: calc(100vh - 80px);
+    @apply !py-8;
+  }
 }
