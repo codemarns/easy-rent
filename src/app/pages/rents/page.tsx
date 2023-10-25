@@ -1,13 +1,16 @@
 import React from "react";
-import { DummyContent } from "@/app/samples/DummyContent";
+import { Houses } from "./sections/Houses";
+import { Resorts } from "./sections/Resorts";
+import { Apartments } from "./sections/Apartments";
+import { Condominiums } from "./sections/Condominiums";
 
 export default function Rents() {
   return (
     <div className="pt-20 -mt-20">
-      <h1>Rents Page</h1>
-      <DummyContent />
-      <DummyContent />
-      <DummyContent />
+      <Houses />
+      <Resorts />
+      <Apartments />
+      <Condominiums />
     </div>
   );
-};
+}
