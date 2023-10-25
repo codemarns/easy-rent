@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <header className={root.base}>
       <div className={root.container.base}>
-        <Link href={"/"}>
+        <Link href={"/"} replace>
           <Image
             width={130}
             height={0}
