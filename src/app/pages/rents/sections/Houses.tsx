@@ -51,7 +51,7 @@ export const Houses = () => {
                 width={1000}
                 height={100}
                 alt="hero-image"
-                src="/modern-studio-apartment-design-with-bedroom-living-space.jpg"
+                src="modern-studio-apartment-design-with-bedroom-living-space.jpg"
                 className="h-[250px] flex-1 object-cover bg-warning"
               />
               <div className="min-h-[100px] p-5 space-y-5">

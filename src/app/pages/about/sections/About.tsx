@@ -20,7 +20,7 @@ export const About = () => {
             width={1000}
             height={100}
             alt="hero-image"
-            src="/front-view-smiley-female-realtor-empty-house.jpg"
+            src="front-view-smiley-female-realtor-empty-house.jpg"
             className="h-[552px] flex-1 object-cover"
           />
           <p className="absolute bottom-1 right-1 text-white/10">

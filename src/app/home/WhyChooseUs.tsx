@@ -53,7 +53,7 @@ export const WhyChooseUs = () => {
               width={1000}
               height={100}
               alt="hero-image"
-              src="/smiling-woman-using-laptop-floor-home.jpg"
+              src="smiling-woman-using-laptop-floor-home.jpg"
               className="h-[552px] flex-1 object-cover"
             />
             <p className="absolute bottom-1 right-1 text-white/10">
@@ -75,7 +75,7 @@ export const WhyChooseUs = () => {
               width={1000}
               height={100}
               alt="hero-image"
-              src="/checkbox-hand-writing-concepts-yes.jpg"
+              src="checkbox-hand-writing-concepts-yes.jpg"
               className="h-[552px] flex-1 object-cover"
             />
             <p className="absolute bottom-1 right-1 text-white/10">
@@ -141,7 +141,7 @@ export const WhyChooseUs = () => {
               width={1000}
               height={100}
               alt="hero-image"
-              src="/close-up-person-doing-online-shopping.jpg"
+              src="close-up-person-doing-online-shopping.jpg"
               className="h-[552px] flex-1 object-cover"
             />
             <p className="absolute bottom-1 right-1 text-white/10">
@@ -163,7 +163,7 @@ export const WhyChooseUs = () => {
               width={1000}
               height={100}
               alt="hero-image"
-              src="/portrait-woman-customer-service-worker.jpg"
+              src="portrait-woman-customer-service-worker.jpg"
               className="h-[552px] flex-1 object-cover"
             />
             <p className="absolute bottom-1 right-1 text-white/10">
@@ -229,7 +229,7 @@ export const WhyChooseUs = () => {
               width={1000}
               height={100}
               alt="hero-image"
-              src="/young-professional-women-standing-together-watching-design-screen.jpg"
+              src="young-professional-women-standing-together-watching-design-screen.jpg"
               className="h-[552px] flex-1 object-cover"
             />
             <p className="absolute bottom-1 right-1 text-white/10">

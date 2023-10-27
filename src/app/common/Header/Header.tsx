@@ -17,7 +17,7 @@ export const Header = () => {
             width={130}
             height={0}
             alt="Picture of the author"
-            src="/easy-rent-high-resolution-logo-transparent.png"
+            src="easy-rent-high-resolution-logo-transparent.png"
           />
         </Link>
 
