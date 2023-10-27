@@ -42,7 +42,7 @@ export const RentalOffers = () => {
   return (
     <section
       id="rental-offers-section"
-      className="rental-offers-section relative h-auto w-full max-w-[1920px] mx-auto flex items-center bg-warning"
+      className="rental-offers-section relative h-auto w-full max-w-[1920px] mx-auto flex items-center bg-warning-300"
     >
       <Image
         priority

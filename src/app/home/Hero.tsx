@@ -11,7 +11,7 @@ export const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="hero-section relative h-auto w-full max-w-[1920px] mx-auto flex items-center bg-warning"
+      className="hero-section relative h-auto w-full max-w-[1920px] mx-auto flex items-center bg-warning-300"
     >
       <Image
         priority
