@@ -53,7 +53,7 @@ export const Resorts = () => {
                 priority
                 width={1000}
                 height={100}
-                alt="hero-image"
+                alt={e.name}
                 src="modern-studio-apartment-design-with-bedroom-living-space.jpg"
                 className="h-[250px] flex-1 object-cover bg-warning"
               />
