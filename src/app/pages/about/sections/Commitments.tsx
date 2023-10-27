@@ -1,5 +1,6 @@
-import { Button, Icon } from "@/app/components";
 import React from "react";
+import Image from "next/image";
+import { Button, Icon } from "@/app/components";
 
 export const Commitments = () => {
   const rental_offers = [
@@ -42,26 +43,38 @@ export const Commitments = () => {
 
   return (
     <section
-      id="our-commitment-section"
-      className="our-commitment-section relative h-auto w-full max-w-[1920px] mx-auto px-8 py-24 flex items-center bg-warning bg-[url('/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg')] bg-center bg-cover bg-no-repeat before:content-[''] before:absolute before:inset-0 before:backdrop-blur-md before:bg-white/50"
+      id="commitment-section"
+      className="commitment-section relative h-auto w-full max-w-[1920px] mx-auto flex items-center bg-warning-300"
     >
-      <div className="relative h-auto w-full max-w-[1440px] mx-auto space-y-24">
-        <div className="flex-1 flex items-center justify-center">
-          <h2 className="relative inline-block text-4xl md:text-5xl font-bold leading-tight text-center tracking-wide before:content-[''] before:absolute before:left-0 before:-top-10 before:h-8 before:w-24 before:border before:border-warning before:rounded-lg after:content-[''] after:absolute after:-right-14 after:-bottom-8 after:h-6 after:w-28 after:bg-warning after:rounded-lg">
-            Our Commitments
-          </h2>
-        </div>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all">
-          {rental_offers.map((e, index) => (
-            <div
-              key={index}
-              id={e.id}
-              className="h-auto p-8 space-y-5 bg-white/75 hover:bg-white hover:scale-105 hover:shadow-xl backdrop-blur-md rounded-xl duration-300 ease-out transition-all"
-            >
-              <Icon size="xl" color="warning" path={e.icon_path} />
-              <span className="inline-block text-lg font-bold">{e.name}</span>
-              <p className="!mt-0">{e.description}</p>
-              {/* <Button
+      <Image
+        priority
+        width={1000}
+        height={100}
+        alt="commitment background image"
+        src="stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <section
+        id="commitment-overlap-section"
+        className="hero-overlap-section relative h-auto w-full max-w-[1920px] mx-auto px-8 py-8 md:py-24 flex items-center backdrop-blur-md bg-white/50"
+      >
+        <div className="relative h-auto w-full max-w-[1440px] mx-auto space-y-24">
+          <div className="flex-1 flex items-center justify-center">
+            <h2 className="relative inline-block text-4xl md:text-5xl font-bold leading-tight text-center tracking-wide before:content-[''] before:absolute before:left-0 before:-top-10 before:h-8 before:w-24 before:border before:border-warning before:rounded-lg after:content-[''] after:absolute after:-right-14 after:-bottom-8 after:h-6 after:w-28 after:bg-warning after:rounded-lg">
+              Our Commitments
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all">
+            {rental_offers.map((e, index) => (
+              <div
+                key={index}
+                id={e.id}
+                className="h-auto p-8 space-y-5 bg-white/75 hover:bg-white hover:scale-105 hover:shadow-xl backdrop-blur-md rounded-xl duration-300 ease-out transition-all"
+              >
+                <Icon size="xl" color="warning" path={e.icon_path} />
+                <span className="inline-block text-lg font-bold">{e.name}</span>
+                <p className="!mt-0">{e.description}</p>
+                {/* <Button
                 layout="block"
                 color="warning"
                 corner="rounded"
@@ -70,10 +83,11 @@ export const Commitments = () => {
                 iconPosition="right"
                 iconPath="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
               /> */}
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
       <p className="absolute bottom-1 right-1 text-white/10">
         <a href="https://www.freepik.com/free-photo/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg_38852655.htm#page=4&query=appartment&position=8&from_view=search&track=sph">
           Image by benzoix
