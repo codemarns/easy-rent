@@ -23,7 +23,7 @@ export const Hero = () => {
       />
       <section
         id="hero-overlap-section"
-        className="hero-overlap-section relative h-auto w-full max-w-[1920px] mx-auto px-8 py-8 md:py-24 flex items-center before:content-[''] before:absolute before:inset-0 before:backdrop-blur-md before:bg-white/50"
+        className="hero-overlap-section relative h-auto w-full max-w-[1920px] mx-auto px-8 py-8 md:py-24 flex items-center backdrop-blur-md bg-white/50"
       >
         <div className="relative h-auto w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 transition-all">
           <div className="flex items-center">

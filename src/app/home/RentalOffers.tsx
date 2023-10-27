@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button, Icon } from "../components";
 
@@ -41,38 +42,51 @@ export const RentalOffers = () => {
   return (
     <section
       id="rental-offers-section"
-      className="rental-offers-section relative h-auto w-full max-w-[1920px] mx-auto px-8 py-24 flex items-center bg-warning bg-[url('/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg')] bg-center bg-cover bg-no-repeat before:content-[''] before:absolute before:inset-0 before:backdrop-blur-md before:bg-white/50"
+      className="rental-offers-section relative h-auto w-full max-w-[1920px] mx-auto flex items-center bg-warning"
     >
-      <div className="relative h-auto w-full max-w-[1440px] mx-auto space-y-24">
-        <div className="flex-1 flex items-center justify-center">
-          <h2 className="relative inline-block text-4xl md:text-5xl font-bold leading-tight text-center tracking-wide before:content-[''] before:absolute before:left-0 before:-top-10 before:h-8 before:w-24 before:border before:border-warning before:rounded-lg after:content-[''] after:absolute after:-right-14 after:-bottom-8 after:h-6 after:w-28 after:bg-warning after:rounded-lg">
-            Our Rental Offerings
-          </h2>
+      <Image
+        priority
+        width={1000}
+        height={100}
+        alt="hero background image"
+        src="stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg.jpg"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <section
+        id="rental-offers-overlay-section"
+        className="rental-offers-overlay-section relative h-auto w-full max-w-[1920px] mx-auto px-8 py-8 md:py-24 flex items-center backdrop-blur-md bg-white/50"
+      >
+        <div className="relative h-auto w-full max-w-[1440px] mx-auto space-y-24">
+          <div className="flex-1 flex items-center justify-center">
+            <h2 className="relative inline-block text-4xl md:text-5xl font-bold leading-tight text-center tracking-wide before:content-[''] before:absolute before:left-0 before:-top-10 before:h-8 before:w-24 before:border before:border-warning before:rounded-lg after:content-[''] after:absolute after:-right-14 after:-bottom-8 after:h-6 after:w-28 after:bg-warning after:rounded-lg">
+              Our Rental Offerings
+            </h2>
+          </div>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all">
+            {rental_offers.map((e, index) => (
+              <div
+                key={index}
+                id={e.id}
+                className="h-auto p-8 space-y-5 bg-white/75 hover:bg-white hover:scale-105 hover:shadow-xl backdrop-blur-md rounded-xl duration-300 ease-out transition-all"
+              >
+                <Icon size="xl" color="warning" path={e.icon_path} />
+                <span className="inline-block text-lg font-bold">{e.name}</span>
+                <p className="!mt-0 line-clamp-6">{e.description}</p>
+                <Button
+                  layout="block"
+                  color="warning"
+                  corner="rounded"
+                  variant="outline"
+                  label="Show More"
+                  iconPosition="right"
+                  iconPath="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  onClick={() => router.push("/pages/rents")}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 transition-all">
-          {rental_offers.map((e, index) => (
-            <div
-              key={index}
-              id={e.id}
-              className="h-auto p-8 space-y-5 bg-white/75 hover:bg-white hover:scale-105 hover:shadow-xl backdrop-blur-md rounded-xl duration-300 ease-out transition-all"
-            >
-              <Icon size="xl" color="warning" path={e.icon_path} />
-              <span className="inline-block text-lg font-bold">{e.name}</span>
-              <p className="!mt-0 line-clamp-6">{e.description}</p>
-              <Button
-                layout="block"
-                color="warning"
-                corner="rounded"
-                variant="outline"
-                label="Show More"
-                iconPosition="right"
-                iconPath="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                onClick={() => router.push("/pages/rents")}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      </section>
       <p className="absolute bottom-1 right-1 text-white/10">
         <a href="https://www.freepik.com/free-photo/stylish-scandinavian-living-room-with-design-mint-sofa-furnitures-mock-up-poster-map-plants-eleg_38852655.htm#page=4&query=appartment&position=8&from_view=search&track=sph">
           Image by benzoix
