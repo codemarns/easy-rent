@@ -47,7 +47,7 @@ export const Apartments = () => {
             <div
               key={index}
               id={e.id}
-              className="h-auto border shadow-lg hover:shadow-2xl rounded-xl hover:z-10 overflow-hidden duration-300 ease-out transition-all"
+              className="h-auto border shadow-lg hover:shadow-2xl rounded-xl hover:z-[5] overflow-hidden duration-300 ease-out transition-all"
             >
               <Image
                 priority
