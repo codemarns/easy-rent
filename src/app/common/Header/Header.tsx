@@ -14,6 +14,7 @@ export const Header = () => {
       <div className={root.container.base}>
         <Link href={"/"} replace>
           <Image
+            priority
             width={130}
             height={0}
             alt="Picture of the author"
