@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Button } from "../components";
+import { AboutImage, Button } from "../components";
 
 export const About = () => {
   const router = useRouter();
@@ -15,14 +15,15 @@ export const About = () => {
     >
       <div className="relative h-auto w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-24 transition-all">
         <div className="relative flex bg-warning rounded-xl overflow-hidden">
-          <Image
+          <AboutImage />
+          {/* <Image
             priority
             width={1000}
             height={100}
             alt="hero-image"
             src="front-view-smiley-female-realtor-empty-house.jpg"
             className="h-[552px] flex-1 object-cover"
-          />
+          /> */}
           <p className="absolute bottom-1 right-1 text-white/10">
             Image by{" "}
             <a href="https://www.freepik.com/free-photo/front-view-smiley-female-realtor-empty-house_13104884.htm#query=appartment%20owner&position=29&from_view=search&track=ais#position=29&query=appartment%20owner">
